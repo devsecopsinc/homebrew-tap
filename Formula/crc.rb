@@ -1,15 +1,15 @@
 class Crc < Formula
   desc "Manage Claude Code remote-control servers, one per workspace, in tmux"
   homepage "https://github.com/devsecopsinc/claude-remote-control"
-  url "https://github.com/devsecopsinc/claude-remote-control/archive/refs/tags/v1.4.0.tar.gz"
-  sha256 "0c88157027681deeb9bd59f9a2afa1cdba67975a08de991d1feb9f649afb3470"
+  url "https://github.com/devsecopsinc/claude-remote-control/archive/refs/tags/v1.5.0.tar.gz"
+  sha256 "adc0730f81ce00f1b9793af50efd39b020408477f8661933bac70df9d205173a"
   license "MIT"
   head "https://github.com/devsecopsinc/claude-remote-control.git", branch: "main"
 
   depends_on "tmux"
 
   def install
-    libexec.install "bin", "lib"
+    libexec.install "bin", "lib", "hooks"
     # crc resolves symlinks to find lib/, so a symlink into bin is enough.
     bin.install_symlink libexec/"bin/crc"
   end
