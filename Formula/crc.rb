@@ -1,8 +1,8 @@
 class Crc < Formula
   desc "Manage Claude Code remote-control servers, one per workspace, in tmux"
   homepage "https://github.com/devsecopsinc/claude-remote-control"
-  url "https://github.com/devsecopsinc/claude-remote-control/archive/refs/tags/v1.8.1.tar.gz"
-  sha256 "0173b5d5953302c2513eb19e977693d92bf592af85a4419026553394f9ea8cb1"
+  url "https://github.com/devsecopsinc/claude-remote-control/archive/refs/tags/v1.8.2.tar.gz"
+  sha256 "941a7781f7be2baeaa0edaa710464c45e7cc237d3edbdac1cd1dd30dd13b3bbb"
   license "MIT"
   head "https://github.com/devsecopsinc/claude-remote-control.git", branch: "main"
 
